@@ -1,37 +1,46 @@
-# 💰 Online Banking Microservices Application
+# 💳 Online Banking Application
 
-A robust and scalable Online Banking System built with **Spring Boot** and **Microservices architecture**. This project covers core banking functionalities including account management, transaction processing, card handling, loan services, and secure authentication.
-
----
-
-## ✨ Features
-
-- ✅ **User Authentication & Authorization** using Spring Security with OAuth2 & JWT
-- 🏦 **Account Service**: Create, view, and manage user bank accounts
-- 💳 **Cards Service**: Issue and manage debit/credit cards
-- 🧾 **Transaction Service**: Handle deposits, withdrawals, and transfers
-- 📑 **Loan Service**: View and manage loans
-- 🔗 **API Gateway**: Routes all traffic securely and efficiently
-- 🔍 **Service Discovery** using Spring Cloud Eureka
-- ⚙️ **Centralized Configuration** via Spring Cloud Config Server
-- 📩 **Kafka Integration** for event-driven communication
-- 📊 **Monitoring & Logging**: Spring Boot Actuator, Sleuth, and Zipkin ready
-- 🐳 **Dockerized** for containerized deployment
+A production-ready microservices-based online banking system developed using **Java**, **Spring Boot**, and **Spring Cloud**. This project simulates core banking operations including account management, transaction processing, and secure service communication. Built for scalability, resilience, and observability in cloud-native environments.
 
 ---
 
-## 🧱 Tech Stack
+## 🔧 Features
 
-| Category        | Technologies Used                                      |
-|----------------|---------------------------------------------------------|
-| Backend         | Java, Spring Boot, Spring Security, Spring Cloud       |
-| Microservices   | Eureka, Spring Cloud Config, Spring Cloud Gateway      |
-| Messaging       | Apache Kafka                                           |
-| Security        | Spring Security, OAuth2, JWT                           |
-| API Docs        | Swagger / Springdoc OpenAPI                            |
-| Containerization| Docker, Docker Compose                                 |
-| Monitoring      | Spring Boot Actuator, Sleuth, Zipkin                   |
-| Dev Tools       | IntelliJ IDEA, Postman, Git, GitHub                    |
+- ✅ Microservices Architecture with **Spring Boot**
+- 🔐 Authentication & Authorization with **OAuth2** and **OpenID Connect**
+- 🛡️ Centralized API Gateway using **Spring Cloud Gateway**
+- 📘 Service Registry & Discovery with **Eureka Server**
+- ⚙️ Externalized Configurations via **Spring Cloud Config Server**
+- ♻️ Fault Tolerance using **Resilience4j**
+- 🐳 Containerized with **Docker**
+- ☸️ Orchestrated using **Kubernetes**
+- 📈 Observability with **Prometheus**, **Grafana**, and **Loki**
+- ✉️ Event-driven Communication using **Kafka** and **RabbitMQ**
+
+---
+
+## 🧱 Microservices
+
+| Service | Description |
+|--------|-------------|
+| **API Gateway** | Central entry point, routing with authentication |
+| **Account Service** | Manages user accounts, balances, profiles |
+| **Transaction Service** | Handles fund transfers, deposits, withdrawals |
+| **Auth Service** | OAuth2-secured login, token generation |
+| **Config Server** | Centralized configuration management |
+| **Discovery Server (Eureka)** | Service registry for locating microservices |
+
+---
+
+## 🛠 Tech Stack
+
+- **Languages**: Java 17
+- **Frameworks**: Spring Boot, Spring Cloud
+- **Security**: Spring Security, OAuth2, JWT
+- **Messaging**: Apache Kafka, RabbitMQ
+- **Monitoring**: Prometheus, Grafana, Loki
+- **Deployment**: Docker, Kubernetes
+- **Build Tool**: Maven
 
 ---
 
