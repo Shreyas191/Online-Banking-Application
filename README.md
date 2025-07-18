@@ -52,11 +52,15 @@ flowchart LR
     Gateway --> Auth
     Gateway --> Account
     Gateway --> Transaction
-    Account <--> Kafka
-    Transaction <--> Kafka
+    Account --> Kafka
+    Transaction --> Kafka
     Auth --> ConfigServer
     Account --> ConfigServer
     Transaction --> ConfigServer
     Gateway --> ConfigServer
     ConfigServer --> Git[Git Repo]
-    Eureka -.-> All Services
+    Eureka --> Auth
+    Eureka --> Account
+    Eureka --> Transaction
+    Eureka --> Gateway
+
