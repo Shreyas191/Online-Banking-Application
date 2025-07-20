@@ -21,16 +21,17 @@ A production-ready microservices-based online banking system developed using **J
 
 ## 🧱 Microservices
 
-| Service | Description |
-|--------|-------------|
-| **API Gateway** | Central entry point, routing with authentication |
-| **Account Service** | Manages user accounts, balances, profiles |
-| **Transaction Service** | Handles fund transfers, deposits, withdrawals |
-| **Auth Service** | OAuth2-secured login, token generation |
-| **Config Server** | Centralized configuration management |
-| **Discovery Server (Eureka)** | Service registry for locating microservices |
+| Service                      | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| **API Gateway**             | Central entry point to the system, handles routing, request forwarding, and security |
+| **Account Service**         | Manages user accounts, account details, balances, and customer profiles     |
+| **Transaction Service**     | Handles internal fund transfers, deposits, and withdrawals                  |
+| **Auth Service**            | Manages authentication using OAuth2 and issues JWT tokens                   |
+| **Cards Service**           | Handles credit/debit card issuance, limits, and card management             |
+| **Loan Service**            | Manages loan applications, approvals, repayments, and schedules             |
+| **Config Server**           | Provides centralized externalized configuration for all microservices       |
+| **Discovery Server (Eureka)** | Enables service registration and discovery for dynamic load balancing       |
 
----
 
 ## 🛠 Tech Stack
 
